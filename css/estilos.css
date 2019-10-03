@@ -1,0 +1,615 @@
+*{
+	font-family: 'Roboto', sans-serif;
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.contenedor{
+	width: 100%;
+	max-width: 1500px;
+	margin: auto;
+}
+
+p{
+	padding: 10px;
+	color: #AAAAAA;
+	word-spacing: 5px;
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+
+input{
+	padding: 10px;
+	border-radius: 10px;
+	border:1px solid #ccc;
+	display: block;
+}
+
+input[type = "button"],input[type = "submit"]{
+	width: 50%;
+	display: block;
+	cursor: pointer;
+	margin: 10px auto;
+	color: #6c3027;
+
+	transition: all .3s ease;
+}
+
+input[type = "button"]:hover,input[type = "submit"]:hover{
+	background:#6c3027;
+	color:#ccc;
+}
+
+h1{
+
+}	
+
+h2{
+	color: #6c3027;
+	padding: 10px;
+}
+
+h3{
+	color: #ccc;
+	padding: 10px;
+}
+
+h4{
+	color: #4e3e37;
+	padding: 10px;
+}
+
+/*------------------------------------------------------------------------*/
+/*Pie de pagina*/
+/*------------------------------------------------------------------------*/
+header{
+	background: rgba(0, 0, 0,.1);
+
+	padding: 10px;
+	margin-bottom: 500px;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo{
+	width: 50px;
+}
+
+header .logo img{
+	width: 100%;
+	display: block;
+	border-radius: 50%;
+}
+
+header nav a{
+	color: #fff;
+	text-decoration: none;
+	margin: 0 20px;
+	text-shadow: 5px 5px 5px #000;
+	transition: all .2s ease;
+}
+
+header nav a:hover{
+	color: #6c0503;
+}
+
+header .buscar{
+	width: 25%;
+	display: flex; 
+}
+
+header .buscar input[type = "search"]{
+	width: 90%;
+	padding: 5px;
+	border: none;
+
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+}
+
+header .buscar button{
+	width: 20%;
+	font-size: 100%;
+	border: none;
+	background: #AAAAAA;
+	cursor: pointer;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	transition: all .3s ease;
+}
+
+header .buscar button:hover{
+	background: #6c3027;
+	width: 25%;
+}
+
+/*----------------------------------------------------------------------------*/
+/*Inicio*/
+/*----------------------------------------------------------------------------*/
+.inicio{
+	background: #e6e6e9;
+	padding: 20px;
+
+	display: flex;
+	/*flex-wrap: wrap;*/
+	justify-content: space-between; 
+}
+
+.inicio .informacion{
+
+	margin: 0 20px;
+	padding: 10px;
+	/*width: 70%;*/
+
+} 
+
+.inicio .galeria{
+	background: #ececed;
+	padding: 20px;
+	flex: 0 0 350px;
+	border-radius: 10px;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+
+.inicio .galeria .marco{
+	background: #d35400;
+	margin: 10px;
+}
+
+.inicio .galeria .marco img{
+	width: 100%;
+	display: block;
+}
+
+
+/*----------------------------------------------------------------------------*/
+/*Eventos*/
+/*----------------------------------------------------------------------------*/
+.eventos{
+	background: #f3f4ef;
+	padding: 20px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.eventos h2{
+	text-align: center;
+}
+
+.eventos nav{
+	margin-top:50px;
+	width: 50%;
+
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+}
+
+.eventos nav button:nth-last-child(1){
+	border-top-right-radius: 10px;
+}
+
+.eventos nav button:nth-last-child(3){
+	border-top-left-radius: 10px;
+}
+
+.eventos nav button{
+	border:none;
+	color: #000;
+	font-size: 15px;
+	background: #6c3027;
+	color: #AAAAAA;
+	width: 20%;
+	padding: 10px;
+	text-align: center;
+	cursor: pointer;
+	transition: all .5s ease;
+
+	flex: 1;
+}
+
+.eventos nav button:hover{
+	background: #AAAAAA;
+	color: #6c3027;
+	/*background: #e6e6e9;*/
+	flex:2;
+}
+
+.eventos .info-eventos{
+	min-height: 400px;
+	max-height: 1000px;
+} 
+
+.eventos .info-eventos div{
+	max-height: 1000px;
+	min-height: 400px;
+
+	display: flex;
+	justify-content: space-between;
+	/*align-items: flex-end;*/
+	flex-wrap: wrap;
+	flex: 1;
+}
+
+.eventos .info-eventos div .info-salon h3{
+	text-shadow: 3px 2px 6px #000;
+}
+
+.eventos .info-eventos div .galeria-salon{
+	display: block;
+	height: auto;	
+}
+
+.eventos .info-eventos div .galeria-salon button{
+	width: 60px;
+	border: none;
+	margin: 10px;
+	background: none;
+	cursor: pointer;
+	transition: all .3s ease;
+}
+
+.eventos .info-eventos div .galeria-salon button img{
+	width: 100%;
+	display: block;
+	border-radius: 10px;
+}
+
+.eventos .info-eventos div .galeria-salon button:hover{
+	width: 12%;
+}
+
+.eventos .info-eventos div .info-salon{
+	display: block;
+	background: rgba(0,0,0,.5);
+}
+
+
+
+/*----------------------------------------------------------------------------*/
+/*Reservaciones*/
+/*----------------------------------------------------------------------------*/
+.reservacion{
+	background: rgba(0,0,0,.7);
+	padding: 5%;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+}
+
+.reservacion h2{
+	text-align: center;
+	width: 100%;
+	text-shadow: 5px 2px 5px #000;
+}
+
+.reservacion nav{
+	width: 100%;
+	background: orange;
+	margin: 2% 0;
+
+	display: flex;
+}
+
+.reservacion nav button{
+	width: 20%;
+	padding: 10px;
+	font-size: 15px;
+	border:none;
+	background: #e6e6e9;
+	cursor: pointer;
+	transition: all .5s ease;
+
+	flex: 1;
+}
+
+.reservacion nav button:nth-last-child(2){
+	border-right: 1px solid #ccc;
+
+}
+
+.reservacion nav button:hover{
+	flex: 2;
+	background:#6c3027;
+}
+
+.reservacion .datos-reservacion {
+	background: #e6e6e9;
+	padding: 20px;
+	margin-left: .1%;
+	width: 48%;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.reservacion .datos-reservacion form div{	
+	width: 100%;
+	margin: 10px;
+
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.reservacion .datos-reservacion form input[type = "email"],.reservacion .datos-reservacion form input[type = "text"]{
+	width: 45%;
+	display: block;
+	margin: 10px auto;
+}
+
+.reservacion .datos-reservacion form div input{
+	width: 45%;
+	margin: 10px;
+}
+
+.reservacion .datos-reservacion form div div input{
+	width: 70%;
+}
+
+
+.reservacion .info-reservacion {
+	width: 50%;
+}
+
+.reservacion .info-reservacion form .costo{
+	background:#6c3027;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.reservacion .info-reservacion form .costo div{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.reservacion .info-reservacion form .costo div h3{
+	width: 100%;
+	text-align: center;
+}
+.reservacion .info-reservacion form .costo div h4{
+	color: #ccc;
+
+}
+
+.reservacion .info-reservacion form .baucher{
+	/*background: #f3f4ef;*/
+	background: #e6e6e9;
+	padding: 10px;
+	margin: 20px 0;
+
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.reservacion .info-reservacion form .baucher div{
+	width: 50%;
+
+	display: flex;
+	flex-wrap: wrap;
+} 
+
+.reservacion .info-reservacion form .baucher .total{
+	width: 100%;
+	border-top: 1px solid #6c3027;
+}
+
+
+/*----------------------------------------------------------------------------*/
+/*Footer*/
+/*----------------------------------------------------------------------------*/
+footer{
+	background: #000;
+	color: #fff;
+}
+
+footer .creador{
+	width: 100%;
+	border-top: 1px solid #fff;
+}
+
+footer .footer-datos{
+	padding: 50px;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+footer .footer-datos .redes, footer .footer-datos .contactar{
+	padding: 20px;
+	margin: 20px;
+	border:1px solid #fff;
+}
+
+footer .footer-datos .redes div{
+	width: 20%;
+	margin: auto;
+	
+	display: flex;
+	flex-direction: column;
+}
+
+
+footer .footer-datos .redes div a{
+	text-decoration: none;
+	font-size:40px;
+	width: 100%;
+	margin: 10px auto;
+}
+
+footer .footer-datos .redes div .fb{
+	color: #3b5998	;
+}
+
+footer .footer-datos .redes div .tw{
+	color: #00aced;
+}
+
+footer .footer-datos .redes div .in{
+	color: #c08d64;
+}
+
+/*----------------------------------------------------------------------------*/
+/*Responsive*/
+/*----------------------------------------------------------------------------*/
+
+@media screen and (max-width: 800px){
+
+
+}
+
+@media screen and (max-width: 650px){
+
+	header{
+		flex-direction: column;
+	}
+
+	header .logo, header nav, header .buscar{
+		margin: 2%;
+	}
+
+	header .buscar{
+		width: 60%;
+	}
+	
+	.inicio{
+		flex-wrap: wrap;
+	}
+	
+	.inicio .galeria{
+		flex-direction: row;
+		flex:1;
+	}
+
+	.inicio .galeria .marco{
+		/*width: 46%;*/
+		flex-grow: 1;
+	}
+
+	.eventos nav {
+		width: 100%;
+	}
+
+	.eventos .info-eventos div{
+		flex-direction: column;
+	}
+
+	.reservacion .datos-reservacion,.reservacion .info-reservacion {	
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	
+} 
+
+
+
+/*----------------------------------------------------------------------------*/
+/*JavaScript*/
+/*----------------------------------------------------------------------------*/
+.eventos .info-eventos .none{
+	display: none;
+}
+
+.reservacion .datos-reservacion .none{
+	display: none;
+}
+
+.reservacion .info-reservacion .none{
+	display: none;
+}
+
+/*Banner*/
+.banner1{
+	background: url(../img/banner1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.banner2{
+	background: url(../img/banner2.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.banner3{
+	background: url(../img/banner3.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+/*Galeria*/
+.eventos .evento1-1{
+	background: url(../img/evento1.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.eventos .evento1-2{
+	background: url(../img/evento1-2.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;	
+}
+
+.eventos .evento1-3{
+	background: url(../img/evento1-3.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;	
+}
+
+.eventos .evento2-1{
+	background: url(../img/evento2.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;	
+}
+
+.eventos .evento2-2{
+	background: url(../img/evento2-2.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;	
+}
+
+.eventos .evento3-1{
+	background: url(../img/evento3.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;	
+}
+
+.eventos .evento3-2{
+	background: url(../img/evento3-2.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;	
+}
+
+
+/*Validar formulario*/
+form .vacio {
+	border: 1px solid red;
+}

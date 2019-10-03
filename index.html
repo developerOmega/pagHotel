@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<title>Pagina Hotel</title>
+</head>
+<body>
+
+	<div class="contenedor banner1" id="banner">
+		<header>
+			<div class="logo">
+				<img src="img/logo.jpg" width="100">
+			</div>
+
+			<nav class="menu">
+				<a href="#bienvenido"><i class="fas fa-home"></i>Inicio</a>
+				<a href="#eventos"></i>Eventos</a>
+				<a href="#reservacion"></i>Reservacion</a>
+				<a href="#"><i class="fas fa-images"></i>Galeria</a>				
+			</nav>
+
+			<div class="buscar"> <!-- Cambiar a form -->
+				<input type="search" name="buscar" placeholder="Buscar" class="buscar-b">
+				<button><i class="fas fa-search"></i></button>
+			</div>
+		</header>
+
+		<div class="inicio">
+			<div class="informacion">
+				<h2><a name="bienvenido">Bienvenido...</a></h2>
+				<p>El pasado 14 de septiembre se estrenó la quinta temporada de Bojack Horseman, serie en la que se tratan temas sobre la fama en Hollywood y todos sus conflictos; también se tocan temas muy delicados sobre la drogadicción, el alcoholismo, enfermedades mentales y conflictos sociales que nos rodean hoy en día, todo manejado con un humor negro y con una cruda realidad sobre los conflictos que tienen que vivir varios personajes para encontrar una vida estable en un mundo inundado por la fama.</p>
+			</div>
+
+			<div class="galeria">
+				<div class="marco">
+					<img src="img/inicio1.jpg" width="200">
+				</div>
+
+				<div class="marco">
+					<div><img src="img/inicio2.jpg" width="200"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="eventos">
+
+			<h2><a name="eventos">Tus eventos...</a></h2>
+
+			<nav class="eventos-menu" id="salones">
+
+				<button>Salon 1</button>
+				<button>Salon 2</button>
+				<button>Salon 3</button>
+			</nav>
+
+			<div class="info-eventos evento1-1" id="info-eventos">
+
+				<div class="block">
+
+					<div class="galeria-salon">
+						<button><img src="img/evento1.jpg" width="50"></button>
+						<button><img src="img/evento1-2.jpg" width="50"></button>
+						<button><img src="img/evento1-3.jpg" width="50"></button>
+					</div>
+
+					<div class="info-salon">
+						<h3>salon 1</h3>
+						<p>Nuestro personaje principal es Bojack Horsema, un caballo que en los 90´s tenía un show de televisión muy famoso, después de finalizar el programa quedo estancado en su carrera y a causa de esto, desarrollo depresión y alcoholismo; ahora, en estos tiempo, busca reivindicarse y salir adelante, tratando de recuperar su carrera como actor, pero se ve sumergido en varios problemas pues no logra ser feliz con las oportunidades que obtiene, esto podría ser debido a sus conflictos del pasado y sus malas experiencias con el mundo de la fama.</p>
+					</div>
+
+				</div>
+
+				<div class="none">
+					<div class="galeria-salon">
+						<button><img src="img/evento2.jpg" width="50"></button>
+						<button><img src="img/evento2-2.jpg" width="50"></button>
+					</div>
+
+					<div class="info-salon">
+						<h3>salon 2</h3>
+						<p>Aclaro que este articulo tendrá spoilers de la temporada 5, así que es un requisito es ya haber visto la serie; por mi parte te recomiendo demasiado esta serie, pues a pesar de todos los temas crudos que contiene, no te desilusionará, estarás apunto de ver una de las mejores animaciones para adultos, aparte con un excelente diseño visual el cual te hará disfrutar a detalle el contenido de Bojack Horseman. Una vez aclarado esto no me queda más que comenzar.</p>
+					</div>
+				</div>
+
+				<div class="none">
+					<div class="galeria-salon">
+						<button><img src="img/evento3.jpg" width="50"></button>
+						<button><img src="img/evento3-2.jpg" width="50"></button>
+					</div>
+
+					<div class="info-salon">
+						<h3>salon 3</h3>
+						<p>Una de las continuaciones que esperaba con más anhelo era las historias de Princesa Carolyn; en esta temporada a consecuencia de no poder tener niños, toma la decisión de adoptar a un bebe, en esta temporada se nos muestra a Princesa Carolyn luchado para adoptar a un niño, pero esto se ve una tarea complicada pues su trabajo como Agente de talentos se lo impide. En esta temporada también conocemos más afondo de su pasado, pues en el capítulo “The amelia earheart story” .</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="reservacion">
+
+			<h2><a name="reservacion">Tus reservaciones...</a></h2>
+
+			<nav class="reservacion-menu" id="reservacion-menu">
+				<button>Habitaciones</button>
+				<button>Salones</button>
+			</nav>
+
+			<div class="datos-reservacion" id="datos-reservacion">
+				<!-- ********************************************************************** -->
+				<!-- Formulario de habitacion-->
+				<!-- ********************************************************************** -->
+				<form action="" method="post" name="habitacionLlenar" id="habitacion" class="">
+
+					<div>
+						<input type="text" name="nombres" placeholder="Tus nombres" class="">
+						<input type="text" name="apellidos" placeholder="Tus apellidos">
+					</div>
+
+					<div>
+						<div>
+							<label for="llegada">Llegada</label>
+							<input type="date" name="llegada" id="llegada" placeholder="Llegada">
+						</div>
+
+						<div>
+							<label for="salida">Salida</label>
+							<input type="date" name="salida" placeholder="Salida">
+						</div>
+					</div>
+
+					<div>
+						<input type="number" name="habitaciones" placeholder="Numero de habitaciones">
+
+						<input type="text" name="tipo" placeholder="Tipo de habitacion" list="opciones-habitacion">
+						<datalist id="opciones-habitacion">
+							<option>Sencilla</option>
+							<option>Doble</option>
+						</datalist>
+					</div>
+
+					<div>
+						<input type="text" name="numeroMovil" placeholder="Numero movil">
+						<input type="text" name="numeroTelefono" placeholder="Numero de telefono">
+					</div>
+
+					<input type="email" name="email" placeholder="Tu correo electronico">
+
+					<input type="button" name="aceptar" value="Aceptar">
+
+				</form>
+
+
+				<!-- ********************************************************************** -->
+				<!-- Formulario de salon -->
+				<!-- ********************************************************************** -->
+
+				<form action="" method="post" name="salonLlenar" id="salon" class="none">
+					<div>
+						<input type="text" name="nombres" placeholder="Tus nombres">
+						<input type="text" name="apellidos" placeholder="Tus apellidos">
+					</div>
+
+					<input type="text" name="nombreSalon" placeholder="Elige un salon" list="opciones-salon">
+					<datalist id="opciones-salon">
+						<option>Salon 1</option>
+						<option>Salon 2</option>
+						<option>Salon 3</option>
+					</datalist>
+					
+					<div>
+						<label for="fecha">Fecha</label>	
+						<input type="date" name="fecha" id="fecha">
+					</div>
+
+					<div>
+						<div>
+							<label for="iniciar">Hora de entrada</label>
+							<input type="time" name="iniciar" id="iniciar">
+						</div>
+
+						<div>
+							<label for="final">Hora de salida</label>
+							<input type="time" name="final" id="final">
+						</div>
+					</div>
+
+					<div>
+						<input type="text" name="numeroMovil" placeholder="Numero movil">
+						<input type="text" name="numeroTelefono" placeholder="Numero telefono">
+					</div>
+
+					<input type="email" name="correo" placeholder="Tu correo electronico">
+
+					<input type="button" name="aceptar" value="Aceptar">
+
+				</form>
+			</div>
+
+			<div class="info-reservacion" id="info-reservacion">
+
+
+				<form action="" method="post" name="habitacion" class="block">
+
+					<div id="costo-habitacion" class="costo">
+						<div class="hab-sencilla">
+							<h3>Habitacion sencilla</h3>
+							<h4>Dia:</h4>
+							<p>$700</p>
+						</div>
+
+						<div class="hab-doble">
+							<h3>Habitacion doble</h3>
+							<h4>Dia:</h4>
+							<p>$900</p>
+						</div>
+					</div>
+
+					<div class="baucher" id="baucher">
+						<div>
+							<h4>A nombre:</h4>
+							<p></p>
+						</div>
+
+						<div>
+							<h4>Llegada:</h4>
+							<p></p>
+						</div>
+
+						<div>
+							<h4>Salida:</h4>
+							<p></p>
+						</div>
+
+						<div>
+							<h4>Dias:</h4>
+							<p></p>
+						</div>
+
+						<div>
+							<h4>Habitaciones:</h4>
+							<p></p>
+						</div>
+						
+						<div>
+							<h4>Tipo:</h4>
+							<p></p>
+						</div>
+
+						<div class="total">
+							<h4>Total:</h4>
+							<p></p>
+						</div>
+					</div>
+
+					<div id="hidden-habitacion">
+						<input type="hidden" name="nombre" value="">
+						<input type="hidden" name="llegada" value="">
+						<input type="hidden" name="salida" value="">
+						<input type="hidden" name="dias" value="">
+						<input type="hidden" name="habitaciones" value="">
+						<input type="hidden" name="tipo" value="">
+						<input type="hidden" name="movil" value="">
+						<input type="hidden" name="telefono" value="">
+						<input type="hidden" name="correo" value="">
+						<input type="hidden" name="total" value="">
+					</div>
+
+					<input type="submit" name="reservar" value="Reservar">
+
+				</form>
+
+
+				<form action="" method="post" name="salon" class="none">
+					<div id="costo-salon" class="costo">
+						<div class="salon1">
+							<h3>Salon 1</h3>
+							<h4>Hora:</h4>
+							<p>$500</p>
+						</div>
+
+						<div class="salon2">
+							<h3>Salon 2</h3>
+							<h4>Hora:</h4>
+							<p>$250</p>
+						</div>
+
+						<div class="salon3">
+							<h3>Salon 3</h3>
+							<h4>Hora:</h4>
+							<p>$100</p>
+						</div>
+					</div>
+
+					<div class="baucher" id="baucherSalon">
+						<div>
+							<h4>Nombre:</h4>
+							<p></p>
+						</div>
+
+						<div>
+							<h4>Salon:</h4>
+							<p></p>
+						</div>
+
+						<div>
+							<h4>Fecha</h4>
+							<p></p>
+						</div>
+
+						<div>
+							<h4>Hora de inicio:</h4>
+							<p></p>
+						</div>
+
+						<div>
+							<h4>Hora de finalizar:</h4>
+							<p></p>
+						</div>
+
+						<div class="total">
+							<h4>Total:</h4>
+							<p</p>
+
+						</div>
+					</div>
+
+					<div id="hidden-salon">
+						<input type="hidden" name="nombre" value="">
+						<input type="hidden" name="salon" value="">
+						<input type="hidden" name="fecha" value="">
+						<input type="hidden" name="entrada" value="">
+						<input type="hidden" name="salida" value="">
+						<input type="hidden" name="movil" value="">
+						<input type="hidden" name="telefono" value="">
+						<input type="hidden" name="correo" value="">
+						<input type="hidden" name="total" value="">
+					</div>
+
+					<input type="submit" name="reservar" value="Reservar">
+
+				</form>
+			</div>
+		</div>
+
+		<footer>
+			<div class="footer-datos">
+				<div class="redes">
+
+					<h2>Contactanos...</h2>
+
+					<div>
+						<a href="#" class="fb"><i class="fab fa-facebook-square"></i></a>
+
+						<a href="#" class="tw"><i class="fab fa-twitter-square"></i></a>
+
+						<a href="#" class="in"><i class="fab fa-instagram"></i> </a>
+					</div>
+				</div>
+
+				<div class="contactar">
+					<h2>Direccion...</h2>
+
+					<p>1234, Estado, Municipio, Direccinon</p>
+
+					<p>456 222 2222</p>
+
+					<p>correo@correo.com</p>
+				</div>
+			</div>
+
+			<p class="creador">Daniel Mendoza - theskip98@gmail.com</p>
+		</footer>
+	</div>
+
+	<script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="bundle.js"></script>
+</body>
+</html>
